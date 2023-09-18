@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TranQuangHuy_2122110458
+namespace From_demo1
 {
     internal static class Program
     {
@@ -16,8 +16,7 @@ namespace TranQuangHuy_2122110458
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new Form1());
         }
-
     }
 }

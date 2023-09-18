@@ -61,19 +61,10 @@ namespace TranQuangHuy_2122110458
                 {
                     MessageBox.Show("Please enter an address!");
                 }
-                
+
                 {
-                    datastudent.Rows.Add(ip_code.Text, ip_name.Text, ip_gender.Text, ip_phone.Text,ip_date.Text, ip_faculy.Text, ip_class.Text, ip_address.Text);
+                    datastudent.Rows.Add(ip_code.Text, ip_name.Text, ip_gender.Text, ip_phone.Text, ip_date.Text, ip_faculy.Text, ip_class.Text, ip_address.Text);
                     MessageBox.Show("Add student succes");
-                    if (ip_code.Text == datastudent.Rows[0].Cells[1].Value.ToString())  
-                    {
-                        MessageBox.Show("The information already exists!");
-                        return;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Add student succes");
-                    }
                 }
             }
         }

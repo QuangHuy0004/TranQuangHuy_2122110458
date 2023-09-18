@@ -310,9 +310,9 @@ namespace TranQuangHuy_2122110458
             this.ip_faculy1.Location = new System.Drawing.Point(330, 67);
             this.ip_faculy1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ip_faculy1.Name = "ip_faculy1";
-            this.ip_faculy1.Size = new System.Drawing.Size(49, 17);
+            this.ip_faculy1.Size = new System.Drawing.Size(53, 17);
             this.ip_faculy1.TabIndex = 39;
-            this.ip_faculy1.Text = "Faculy";
+            this.ip_faculy1.Text = "Faculty";
             this.ip_faculy1.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
