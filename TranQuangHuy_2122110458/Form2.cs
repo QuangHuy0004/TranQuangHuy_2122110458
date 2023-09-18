@@ -79,5 +79,10 @@ namespace TranQuangHuy_2122110458
         {
 
         }
+
+        private void txt_Status_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

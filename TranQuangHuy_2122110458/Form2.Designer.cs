@@ -219,6 +219,7 @@
             this.txt_Status.Size = new System.Drawing.Size(441, 96);
             this.txt_Status.TabIndex = 15;
             this.txt_Status.Text = "";
+            this.txt_Status.TextChanged += new System.EventHandler(this.txt_Status_TextChanged);
             // 
             // Form2
             // 
