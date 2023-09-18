@@ -57,7 +57,7 @@ namespace TranQuangHuy_2122110458
             this.label2 = new System.Windows.Forms.Label();
             this.ip_name2 = new System.Windows.Forms.Label();
             this.datastudent = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,7 +91,7 @@ namespace TranQuangHuy_2122110458
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.datastudent);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(751, 468);
             this.flowLayoutPanel1.TabIndex = 5;
@@ -119,7 +119,7 @@ namespace TranQuangHuy_2122110458
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.ip_name2);
             this.panel2.Location = new System.Drawing.Point(2, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(741, 212);
             this.panel2.TabIndex = 0;
@@ -133,7 +133,7 @@ namespace TranQuangHuy_2122110458
             "Nữ",
             "LGBT"});
             this.ip_gender.Location = new System.Drawing.Point(115, 111);
-            this.ip_gender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_gender.Margin = new System.Windows.Forms.Padding(2);
             this.ip_gender.Name = "ip_gender";
             this.ip_gender.Size = new System.Drawing.Size(149, 21);
             this.ip_gender.TabIndex = 60;
@@ -148,7 +148,7 @@ namespace TranQuangHuy_2122110458
             "Danang City",
             "Dalat City"});
             this.ip_address.Location = new System.Drawing.Point(390, 156);
-            this.ip_address.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_address.Margin = new System.Windows.Forms.Padding(2);
             this.ip_address.Name = "ip_address";
             this.ip_address.Size = new System.Drawing.Size(152, 21);
             this.ip_address.TabIndex = 59;
@@ -169,7 +169,7 @@ namespace TranQuangHuy_2122110458
             // ip_phone
             // 
             this.ip_phone.Location = new System.Drawing.Point(115, 158);
-            this.ip_phone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_phone.Margin = new System.Windows.Forms.Padding(2);
             this.ip_phone.Name = "ip_phone";
             this.ip_phone.Size = new System.Drawing.Size(149, 20);
             this.ip_phone.TabIndex = 57;
@@ -195,7 +195,7 @@ namespace TranQuangHuy_2122110458
             "Digital Makerting",
             "Sorfwave "});
             this.ip_faculy.Location = new System.Drawing.Point(390, 63);
-            this.ip_faculy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_faculy.Margin = new System.Windows.Forms.Padding(2);
             this.ip_faculy.Name = "ip_faculy";
             this.ip_faculy.Size = new System.Drawing.Size(152, 21);
             this.ip_faculy.TabIndex = 55;
@@ -210,35 +210,35 @@ namespace TranQuangHuy_2122110458
             "CCQ2211L",
             ""});
             this.ip_class.Location = new System.Drawing.Point(390, 110);
-            this.ip_class.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_class.Margin = new System.Windows.Forms.Padding(2);
             this.ip_class.Name = "ip_class";
             this.ip_class.Size = new System.Drawing.Size(152, 21);
             this.ip_class.TabIndex = 54;
             // 
             // ip_date
             // 
+            this.ip_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.ip_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ip_date.Location = new System.Drawing.Point(390, 23);
-            this.ip_date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_date.Location = new System.Drawing.Point(390, 20);
+            this.ip_date.Margin = new System.Windows.Forms.Padding(2);
             this.ip_date.Name = "ip_date";
-            this.ip_date.Size = new System.Drawing.Size(152, 20);
+            this.ip_date.Size = new System.Drawing.Size(152, 23);
             this.ip_date.TabIndex = 51;
             // 
             // ip_code
             // 
             this.ip_code.AccessibleRole = System.Windows.Forms.AccessibleRole.PageTabList;
             this.ip_code.Location = new System.Drawing.Point(115, 20);
-            this.ip_code.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_code.Margin = new System.Windows.Forms.Padding(2);
             this.ip_code.Name = "ip_code";
             this.ip_code.Size = new System.Drawing.Size(149, 20);
             this.ip_code.TabIndex = 49;
-            this.ip_code.Text = "1";
             this.ip_code.TextChanged += new System.EventHandler(this.ip_code_TextChanged);
             // 
             // ip_name
             // 
             this.ip_name.Location = new System.Drawing.Point(115, 65);
-            this.ip_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ip_name.Margin = new System.Windows.Forms.Padding(2);
             this.ip_name.Name = "ip_name";
             this.ip_name.Size = new System.Drawing.Size(149, 20);
             this.ip_name.TabIndex = 48;
@@ -259,7 +259,7 @@ namespace TranQuangHuy_2122110458
             // 
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btn_add.Location = new System.Drawing.Point(609, 23);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(84, 33);
             this.btn_add.TabIndex = 43;
@@ -271,7 +271,7 @@ namespace TranQuangHuy_2122110458
             // 
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btn_delete.Location = new System.Drawing.Point(609, 144);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(84, 34);
             this.btn_delete.TabIndex = 42;
@@ -283,7 +283,7 @@ namespace TranQuangHuy_2122110458
             // 
             this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btn_edit.Location = new System.Drawing.Point(609, 83);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(84, 34);
             this.btn_edit.TabIndex = 41;
@@ -367,7 +367,7 @@ namespace TranQuangHuy_2122110458
             this.datastudent.BackgroundColor = System.Drawing.Color.DarkGray;
             this.datastudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datastudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
+            this.code,
             this.Column2,
             this.Column5,
             this.Column4,
@@ -376,19 +376,20 @@ namespace TranQuangHuy_2122110458
             this.Date,
             this.Column7});
             this.datastudent.Location = new System.Drawing.Point(2, 218);
-            this.datastudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datastudent.Margin = new System.Windows.Forms.Padding(2);
             this.datastudent.Name = "datastudent";
             this.datastudent.RowHeadersWidth = 51;
             this.datastudent.RowTemplate.Height = 24;
             this.datastudent.Size = new System.Drawing.Size(741, 250);
             this.datastudent.TabIndex = 51;
             this.datastudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datastudent_CellClick);
+            this.datastudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datastudent_CellContentClick_1);
             // 
-            // Column1
+            // code
             // 
-            this.Column1.HeaderText = "Student Code";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
+            this.code.HeaderText = "Student Code";
+            this.code.MinimumWidth = 6;
+            this.code.Name = "code";
             // 
             // Column2
             // 
@@ -440,7 +441,7 @@ namespace TranQuangHuy_2122110458
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -476,14 +477,6 @@ namespace TranQuangHuy_2122110458
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridView datastudent;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox ip_address;
         private System.Windows.Forms.Label label3;
@@ -505,6 +498,14 @@ namespace TranQuangHuy_2122110458
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label ip_name2;
         private System.Windows.Forms.ComboBox ip_gender;
+        private DataGridViewTextBoxColumn code;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Date;
+        private DataGridViewTextBoxColumn Column7;
     }
 }
 

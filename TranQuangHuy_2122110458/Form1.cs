@@ -61,25 +61,23 @@ namespace TranQuangHuy_2122110458
                 {
                     MessageBox.Show("Please enter an address!");
                 }
-                else
+                
                 {
                     datastudent.Rows.Add(ip_code.Text, ip_name.Text, ip_gender.Text, ip_phone.Text,ip_date.Text, ip_faculy.Text, ip_class.Text, ip_address.Text);
                     MessageBox.Show("Add student succes");
-                    //if (ip_code.Text == ip_code.Text)
-                    //{
-                    //    MessageBox.Show("readly exists");
-                    //    MessageBox.Show("The information already exists, do you want to continue importing it?");
-
-
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("Add student succes");
-                    //}
+                    if (ip_code.Text == datastudent.Rows[0].Cells[1].Value.ToString())  
+                    {
+                        MessageBox.Show("The information already exists!");
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Add student succes");
+                    }
                 }
             }
         }
-        // xu li trung thong tin ma sv
+
 
 
         private void label3_Click(object sender, EventArgs e)
@@ -219,6 +217,11 @@ namespace TranQuangHuy_2122110458
         }
 
         private void ip_class2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datastudent_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
