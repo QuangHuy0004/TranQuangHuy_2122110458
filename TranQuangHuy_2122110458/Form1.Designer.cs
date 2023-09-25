@@ -65,6 +65,7 @@ namespace TranQuangHuy_2122110458
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Close = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datastudent)).BeginInit();
@@ -98,6 +99,7 @@ namespace TranQuangHuy_2122110458
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btn_Close);
             this.panel2.Controls.Add(this.ip_gender);
             this.panel2.Controls.Add(this.ip_address);
             this.panel2.Controls.Add(this.label3);
@@ -258,7 +260,7 @@ namespace TranQuangHuy_2122110458
             // btn_add
             // 
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_add.Location = new System.Drawing.Point(609, 23);
+            this.btn_add.Location = new System.Drawing.Point(612, 20);
             this.btn_add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(84, 33);
@@ -270,7 +272,7 @@ namespace TranQuangHuy_2122110458
             // btn_delete
             // 
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_delete.Location = new System.Drawing.Point(609, 144);
+            this.btn_delete.Location = new System.Drawing.Point(612, 113);
             this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(84, 34);
@@ -282,7 +284,7 @@ namespace TranQuangHuy_2122110458
             // btn_edit
             // 
             this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_edit.Location = new System.Drawing.Point(609, 83);
+            this.btn_edit.Location = new System.Drawing.Point(612, 65);
             this.btn_edit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(84, 34);
@@ -433,6 +435,18 @@ namespace TranQuangHuy_2122110458
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
+            // btn_Close
+            // 
+            this.btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btn_Close.Location = new System.Drawing.Point(612, 158);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(84, 34);
+            this.btn_Close.TabIndex = 61;
+            this.btn_Close.Text = "Close";
+            this.btn_Close.UseVisualStyleBackColor = true;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +520,7 @@ namespace TranQuangHuy_2122110458
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Date;
         private DataGridViewTextBoxColumn Column7;
+        private Button btn_Close;
     }
 }
 

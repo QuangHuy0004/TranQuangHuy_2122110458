@@ -19,7 +19,7 @@ namespace TranQuangHuy_2122110458
 
         private void F1_Click(object sender, EventArgs e)
         {
-            Form1 objfrom1 = new Form1();
+           Form1 objfrom1 = new Form1();
             objfrom1.ShowDialog();
         }
 
@@ -32,6 +32,17 @@ namespace TranQuangHuy_2122110458
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Exits_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_Form3_Click(object sender, EventArgs e)
+        {
+            Form3 objfrom3 = new Form3();
+            objfrom3.ShowDialog();
         }
     }
 }

@@ -84,5 +84,10 @@ namespace TranQuangHuy_2122110458
         {
 
         }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

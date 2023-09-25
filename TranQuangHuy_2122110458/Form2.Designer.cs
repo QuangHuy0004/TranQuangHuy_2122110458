@@ -46,6 +46,7 @@
             this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_Status = new System.Windows.Forms.RichTextBox();
+            this.btn_Close = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataStatus)).BeginInit();
             this.SuspendLayout();
@@ -221,11 +222,23 @@
             this.txt_Status.Text = "";
             this.txt_Status.TextChanged += new System.EventHandler(this.txt_Status_TextChanged);
             // 
+            // btn_Close
+            // 
+            this.btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btn_Close.Location = new System.Drawing.Point(433, 546);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(141, 29);
+            this.btn_Close.TabIndex = 16;
+            this.btn_Close.Text = "Close";
+            this.btn_Close.UseVisualStyleBackColor = true;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 562);
+            this.ClientSize = new System.Drawing.Size(586, 587);
+            this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.txt_Status);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDate);
@@ -268,5 +281,6 @@
         private System.Windows.Forms.DateTimePicker txtDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox txt_Status;
+        private System.Windows.Forms.Button btn_Close;
     }
 }
