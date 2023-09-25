@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace TranQuangHuy_2122110458
 {
-    public partial class Form3_1 : Form3
+    public partial class Form3_1 : Form
     {
         public Form3_1()
         {
@@ -26,7 +26,7 @@ namespace TranQuangHuy_2122110458
 
         private void label2_Click(object sender, EventArgs e)
         {
-            O_codestudent.Text = ot;
+            // O_codestudent.Text = ot;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
