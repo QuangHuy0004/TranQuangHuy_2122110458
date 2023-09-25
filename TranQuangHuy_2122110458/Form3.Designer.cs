@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tb_SC = new System.Windows.Forms.TextBox();
-            this.tb_Address = new System.Windows.Forms.TextBox();
-            this.tx_POB = new System.Windows.Forms.TextBox();
-            this.tx_D = new System.Windows.Forms.TextBox();
-            this.tb_FN = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tb_Gender = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_FN = new System.Windows.Forms.TextBox();
+            this.tx_D = new System.Windows.Forms.TextBox();
+            this.tx_POB = new System.Windows.Forms.TextBox();
+            this.tb_Address = new System.Windows.Forms.TextBox();
+            this.tb_SC = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -75,103 +75,6 @@
             this.groupBox1.Text = "Student Information";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.groupBox2.Location = new System.Drawing.Point(12, 323);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(776, 115);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Exam Information";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // tb_SC
-            // 
-            this.tb_SC.Location = new System.Drawing.Point(157, 35);
-            this.tb_SC.Name = "tb_SC";
-            this.tb_SC.Size = new System.Drawing.Size(135, 23);
-            this.tb_SC.TabIndex = 0;
-            // 
-            // tb_Address
-            // 
-            this.tb_Address.Location = new System.Drawing.Point(157, 242);
-            this.tb_Address.Name = "tb_Address";
-            this.tb_Address.Size = new System.Drawing.Size(200, 23);
-            this.tb_Address.TabIndex = 1;
-            // 
-            // tx_POB
-            // 
-            this.tx_POB.Location = new System.Drawing.Point(157, 159);
-            this.tx_POB.Name = "tx_POB";
-            this.tx_POB.Size = new System.Drawing.Size(200, 23);
-            this.tx_POB.TabIndex = 3;
-            // 
-            // tx_D
-            // 
-            this.tx_D.Location = new System.Drawing.Point(157, 116);
-            this.tx_D.Name = "tx_D";
-            this.tx_D.Size = new System.Drawing.Size(135, 23);
-            this.tx_D.TabIndex = 4;
-            // 
-            // tb_FN
-            // 
-            this.tb_FN.Location = new System.Drawing.Point(157, 75);
-            this.tb_FN.Name = "tb_FN";
-            this.tb_FN.Size = new System.Drawing.Size(200, 23);
-            this.tb_FN.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 17);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Student Code";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "FullName";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(113, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Date";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 159);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 17);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Place of birth";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(95, 201);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Gender";
-            // 
             // tb_Gender
             // 
             this.tb_Gender.FormattingEnabled = true;
@@ -192,14 +95,121 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Address";
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(66, 53);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 17);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Select Exam";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(95, 201);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 17);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Gender";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(60, 159);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 17);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Place of birth";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(113, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Date";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(84, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 17);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "FullName";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(57, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Student Code";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tb_FN
+            // 
+            this.tb_FN.Location = new System.Drawing.Point(157, 75);
+            this.tb_FN.Name = "tb_FN";
+            this.tb_FN.Size = new System.Drawing.Size(200, 23);
+            this.tb_FN.TabIndex = 5;
+            // 
+            // tx_D
+            // 
+            this.tx_D.Location = new System.Drawing.Point(157, 116);
+            this.tx_D.Name = "tx_D";
+            this.tx_D.Size = new System.Drawing.Size(135, 23);
+            this.tx_D.TabIndex = 4;
+            // 
+            // tx_POB
+            // 
+            this.tx_POB.Location = new System.Drawing.Point(157, 159);
+            this.tx_POB.Name = "tx_POB";
+            this.tx_POB.Size = new System.Drawing.Size(200, 23);
+            this.tx_POB.TabIndex = 3;
+            // 
+            // tb_Address
+            // 
+            this.tb_Address.Location = new System.Drawing.Point(157, 242);
+            this.tb_Address.Name = "tb_Address";
+            this.tb_Address.Size = new System.Drawing.Size(200, 23);
+            this.tb_Address.TabIndex = 1;
+            // 
+            // tb_SC
+            // 
+            this.tb_SC.Location = new System.Drawing.Point(157, 35);
+            this.tb_SC.Name = "tb_SC";
+            this.tb_SC.Size = new System.Drawing.Size(135, 23);
+            this.tb_SC.TabIndex = 0;
+            this.tb_SC.TextChanged += new System.EventHandler(this.tb_SC_TextChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBox2.Location = new System.Drawing.Point(12, 323);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(776, 115);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Exam Information";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(623, 58);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(109, 17);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Time: 60 Minute";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(439, 58);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(141, 17);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Question number: 60";
             // 
             // comboBox2
             // 
@@ -212,23 +222,14 @@
             this.comboBox2.Size = new System.Drawing.Size(200, 25);
             this.comboBox2.TabIndex = 13;
             // 
-            // label8
+            // label7
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(439, 58);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 17);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Question number: 60";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(623, 58);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Time: 60 Minute";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(66, 53);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Select Exam";
             // 
             // button1
             // 

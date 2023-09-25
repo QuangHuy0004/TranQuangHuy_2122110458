@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace TranQuangHuy_2122110458
-{
+namespace TranQuangHuy_2122110458 { 
+
     public partial class Form3 : Form
     {
+        public string ot;
         private string text;
 
         public Form3()
@@ -43,10 +44,10 @@ namespace TranQuangHuy_2122110458
         private void button2_Click(object sender, EventArgs e)
         {
 
+
             Form3_1 objform3_1 = new Form3_1();
 
 
-            objform3_1.SetLabelText(Text);
 
             objform3_1.ShowDialog();
 
@@ -57,5 +58,9 @@ namespace TranQuangHuy_2122110458
 
         }
 
+        private void tb_SC_TextChanged(object sender, EventArgs e)
+        {
+            ot = tb_SC.Text;    
+        }
     }
 }
