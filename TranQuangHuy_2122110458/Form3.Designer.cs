@@ -30,17 +30,17 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tb_SC = new System.Windows.Forms.TextBox();
+            this.tb_Address = new System.Windows.Forms.TextBox();
+            this.tx_POB = new System.Windows.Forms.TextBox();
+            this.tx_D = new System.Windows.Forms.TextBox();
+            this.tb_FN = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tb_Gender = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -54,18 +54,18 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.tb_Gender);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tb_FN);
+            this.groupBox1.Controls.Add(this.tx_D);
+            this.groupBox1.Controls.Add(this.tx_POB);
+            this.groupBox1.Controls.Add(this.tb_Address);
+            this.groupBox1.Controls.Add(this.tb_SC);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -90,40 +90,40 @@
             this.groupBox2.Text = "Exam Information";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBox1
+            // tb_SC
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 23);
-            this.textBox1.TabIndex = 0;
+            this.tb_SC.Location = new System.Drawing.Point(157, 35);
+            this.tb_SC.Name = "tb_SC";
+            this.tb_SC.Size = new System.Drawing.Size(135, 23);
+            this.tb_SC.TabIndex = 0;
             // 
-            // textBox2
+            // tb_Address
             // 
-            this.textBox2.Location = new System.Drawing.Point(157, 242);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 23);
-            this.textBox2.TabIndex = 1;
+            this.tb_Address.Location = new System.Drawing.Point(157, 242);
+            this.tb_Address.Name = "tb_Address";
+            this.tb_Address.Size = new System.Drawing.Size(200, 23);
+            this.tb_Address.TabIndex = 1;
             // 
-            // textBox4
+            // tx_POB
             // 
-            this.textBox4.Location = new System.Drawing.Point(157, 159);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 23);
-            this.textBox4.TabIndex = 3;
+            this.tx_POB.Location = new System.Drawing.Point(157, 159);
+            this.tx_POB.Name = "tx_POB";
+            this.tx_POB.Size = new System.Drawing.Size(200, 23);
+            this.tx_POB.TabIndex = 3;
             // 
-            // textBox5
+            // tx_D
             // 
-            this.textBox5.Location = new System.Drawing.Point(157, 116);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(135, 23);
-            this.textBox5.TabIndex = 4;
+            this.tx_D.Location = new System.Drawing.Point(157, 116);
+            this.tx_D.Name = "tx_D";
+            this.tx_D.Size = new System.Drawing.Size(135, 23);
+            this.tx_D.TabIndex = 4;
             // 
-            // textBox6
+            // tb_FN
             // 
-            this.textBox6.Location = new System.Drawing.Point(157, 75);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 23);
-            this.textBox6.TabIndex = 5;
+            this.tb_FN.Location = new System.Drawing.Point(157, 75);
+            this.tb_FN.Name = "tb_FN";
+            this.tb_FN.Size = new System.Drawing.Size(200, 23);
+            this.tb_FN.TabIndex = 5;
             // 
             // label1
             // 
@@ -172,16 +172,16 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Gender";
             // 
-            // comboBox1
+            // tb_Gender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.tb_Gender.FormattingEnabled = true;
+            this.tb_Gender.Items.AddRange(new object[] {
             "Nam ",
             "Nữ"});
-            this.comboBox1.Location = new System.Drawing.Point(157, 201);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 25);
-            this.comboBox1.TabIndex = 12;
+            this.tb_Gender.Location = new System.Drawing.Point(157, 201);
+            this.tb_Gender.Name = "tb_Gender";
+            this.tb_Gender.Size = new System.Drawing.Size(135, 25);
+            this.tb_Gender.TabIndex = 12;
             // 
             // label6
             // 
@@ -195,18 +195,18 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(84, 50);
+            this.label7.Location = new System.Drawing.Point(66, 53);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 17);
+            this.label7.Size = new System.Drawing.Size(85, 17);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Address";
+            this.label7.Text = "Select Exam";
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Nam ",
-            "Nữ"});
+            "Test EngLish",
+            "Test Technical ( IT )"});
             this.comboBox2.Location = new System.Drawing.Point(157, 50);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(200, 25);
@@ -279,13 +279,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_FN;
+        private System.Windows.Forms.TextBox tx_D;
+        private System.Windows.Forms.TextBox tx_POB;
+        private System.Windows.Forms.TextBox tb_Address;
+        private System.Windows.Forms.TextBox tb_SC;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tb_Gender;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;

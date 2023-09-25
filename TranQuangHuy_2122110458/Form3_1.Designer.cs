@@ -30,18 +30,18 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.ip_codestudent = new System.Windows.Forms.Label();
+            this.O_codestudent = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.ip_fullname = new System.Windows.Forms.Label();
-            this.ip_date = new System.Windows.Forms.Label();
+            this.O_fullname = new System.Windows.Forms.Label();
+            this.O_date = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.check_1 = new System.Windows.Forms.RadioButton();
+            this.check_4 = new System.Windows.Forms.RadioButton();
+            this.check_3 = new System.Windows.Forms.RadioButton();
+            this.check_2 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -53,11 +53,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.ip_date);
-            this.groupBox1.Controls.Add(this.ip_fullname);
+            this.groupBox1.Controls.Add(this.O_date);
+            this.groupBox1.Controls.Add(this.O_fullname);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.ip_codestudent);
+            this.groupBox1.Controls.Add(this.O_codestudent);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -78,15 +78,15 @@
             this.label1.Text = "FullName";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // ip_codestudent
+            // O_codestudent
             // 
-            this.ip_codestudent.AutoSize = true;
-            this.ip_codestudent.Location = new System.Drawing.Point(117, 38);
-            this.ip_codestudent.Name = "ip_codestudent";
-            this.ip_codestudent.Size = new System.Drawing.Size(20, 17);
-            this.ip_codestudent.TabIndex = 7;
-            this.ip_codestudent.Text = "...";
-            this.ip_codestudent.Click += new System.EventHandler(this.label2_Click);
+            this.O_codestudent.AutoSize = true;
+            this.O_codestudent.Location = new System.Drawing.Point(117, 38);
+            this.O_codestudent.Name = "O_codestudent";
+            this.O_codestudent.Size = new System.Drawing.Size(20, 17);
+            this.O_codestudent.TabIndex = 7;
+            this.O_codestudent.Text = "...";
+            this.O_codestudent.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -106,23 +106,23 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Code";
             // 
-            // ip_fullname
+            // O_fullname
             // 
-            this.ip_fullname.AutoSize = true;
-            this.ip_fullname.Location = new System.Drawing.Point(366, 38);
-            this.ip_fullname.Name = "ip_fullname";
-            this.ip_fullname.Size = new System.Drawing.Size(20, 17);
-            this.ip_fullname.TabIndex = 10;
-            this.ip_fullname.Text = "...";
+            this.O_fullname.AutoSize = true;
+            this.O_fullname.Location = new System.Drawing.Point(366, 38);
+            this.O_fullname.Name = "O_fullname";
+            this.O_fullname.Size = new System.Drawing.Size(20, 17);
+            this.O_fullname.TabIndex = 10;
+            this.O_fullname.Text = "...";
             // 
-            // ip_date
+            // O_date
             // 
-            this.ip_date.AutoSize = true;
-            this.ip_date.Location = new System.Drawing.Point(605, 38);
-            this.ip_date.Name = "ip_date";
-            this.ip_date.Size = new System.Drawing.Size(20, 17);
-            this.ip_date.TabIndex = 11;
-            this.ip_date.Text = "...";
+            this.O_date.AutoSize = true;
+            this.O_date.Location = new System.Drawing.Point(605, 38);
+            this.O_date.Name = "O_date";
+            this.O_date.Size = new System.Drawing.Size(20, 17);
+            this.O_date.TabIndex = 11;
+            this.O_date.Text = "...";
             // 
             // groupBox2
             // 
@@ -148,10 +148,10 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton4);
-            this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.check_2);
+            this.groupBox3.Controls.Add(this.check_3);
+            this.groupBox3.Controls.Add(this.check_4);
+            this.groupBox3.Controls.Add(this.check_1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBox3.Location = new System.Drawing.Point(12, 260);
             this.groupBox3.Name = "groupBox3";
@@ -160,50 +160,50 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Answer";
             // 
-            // radioButton1
+            // check_1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(43, 44);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(154, 21);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Công nghệ thông tin";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.check_1.AutoSize = true;
+            this.check_1.Location = new System.Drawing.Point(43, 44);
+            this.check_1.Name = "check_1";
+            this.check_1.Size = new System.Drawing.Size(154, 21);
+            this.check_1.TabIndex = 10;
+            this.check_1.TabStop = true;
+            this.check_1.Text = "Công nghệ thông tin";
+            this.check_1.UseVisualStyleBackColor = true;
+            this.check_1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // check_4
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(43, 125);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(123, 21);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Công nghệ ô tô";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.check_4.AutoSize = true;
+            this.check_4.Location = new System.Drawing.Point(43, 125);
+            this.check_4.Name = "check_4";
+            this.check_4.Size = new System.Drawing.Size(123, 21);
+            this.check_4.TabIndex = 11;
+            this.check_4.TabStop = true;
+            this.check_4.Text = "Công nghệ ô tô";
+            this.check_4.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // check_3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(43, 98);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(164, 21);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Tiếng anh thương mại";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.check_3.AutoSize = true;
+            this.check_3.Location = new System.Drawing.Point(43, 98);
+            this.check_3.Name = "check_3";
+            this.check_3.Size = new System.Drawing.Size(164, 21);
+            this.check_3.TabIndex = 12;
+            this.check_3.TabStop = true;
+            this.check_3.Text = "Tiếng anh thương mại";
+            this.check_3.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // check_2
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(43, 71);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(151, 21);
-            this.radioButton4.TabIndex = 13;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Quản trị kinh doanh";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.check_2.AutoSize = true;
+            this.check_2.Location = new System.Drawing.Point(43, 71);
+            this.check_2.Name = "check_2";
+            this.check_2.Size = new System.Drawing.Size(151, 21);
+            this.check_2.TabIndex = 13;
+            this.check_2.TabStop = true;
+            this.check_2.Text = "Quản trị kinh doanh";
+            this.check_2.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -272,18 +272,18 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label ip_codestudent;
-        private System.Windows.Forms.Label ip_date;
-        private System.Windows.Forms.Label ip_fullname;
+        private System.Windows.Forms.Label O_codestudent;
+        private System.Windows.Forms.Label O_date;
+        private System.Windows.Forms.Label O_fullname;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton check_2;
+        private System.Windows.Forms.RadioButton check_3;
+        private System.Windows.Forms.RadioButton check_4;
+        private System.Windows.Forms.RadioButton check_1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
