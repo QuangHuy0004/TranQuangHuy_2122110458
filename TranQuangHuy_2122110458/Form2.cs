@@ -67,11 +67,6 @@ namespace TranQuangHuy_2122110458
                 //add RichtextBox
                 txt_Status.Text = ( user + "\n" + date+ "\n " + faculty+ "\n " + gender);
 
-                // Xóa các trường nhập liệu sau khi thêm
-                //txtUser.Clear();
-                //txtFaculty.Items.Remove(txtFaculty.SelectedItem);
-                //otp1.Checked = false;
-                //otp2.Checked = false;
             }
         }
 

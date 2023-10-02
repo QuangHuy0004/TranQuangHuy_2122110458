@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Exits = new System.Windows.Forms.Button();
             this.btn_Form3 = new System.Windows.Forms.Button();
+            this.F4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // F1
@@ -89,11 +90,23 @@
             this.btn_Form3.UseVisualStyleBackColor = true;
             this.btn_Form3.Click += new System.EventHandler(this.btn_Form3_Click);
             // 
+            // F4
+            // 
+            this.F4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.F4.Location = new System.Drawing.Point(133, 94);
+            this.F4.Name = "F4";
+            this.F4.Size = new System.Drawing.Size(75, 26);
+            this.F4.TabIndex = 5;
+            this.F4.Text = "From4";
+            this.F4.UseVisualStyleBackColor = true;
+            this.F4.Click += new System.EventHandler(this.form4_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(245, 228);
+            this.Controls.Add(this.F4);
             this.Controls.Add(this.btn_Form3);
             this.Controls.Add(this.btn_Exits);
             this.Controls.Add(this.label1);
@@ -113,5 +126,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Exits;
         private System.Windows.Forms.Button btn_Form3;
+        private System.Windows.Forms.Button F4;
     }
 }

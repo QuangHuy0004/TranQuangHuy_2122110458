@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ip_date = new System.Windows.Forms.Label();
+            this.ip_fullname = new System.Windows.Forms.Label();
+            this.ip_codestudent = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ip_codestudent = new System.Windows.Forms.Label();
-            this.ip_fullname = new System.Windows.Forms.Label();
-            this.ip_date = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -56,6 +56,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Information";
             // 
+            // ip_date
+            // 
+            this.ip_date.AutoSize = true;
+            this.ip_date.Location = new System.Drawing.Point(172, 128);
+            this.ip_date.Name = "ip_date";
+            this.ip_date.Size = new System.Drawing.Size(20, 17);
+            this.ip_date.TabIndex = 12;
+            this.ip_date.Text = "...";
+            // 
+            // ip_fullname
+            // 
+            this.ip_fullname.AutoSize = true;
+            this.ip_fullname.Location = new System.Drawing.Point(172, 91);
+            this.ip_fullname.Name = "ip_fullname";
+            this.ip_fullname.Size = new System.Drawing.Size(20, 17);
+            this.ip_fullname.TabIndex = 11;
+            this.ip_fullname.Text = "...";
+            // 
+            // ip_codestudent
+            // 
+            this.ip_codestudent.AutoSize = true;
+            this.ip_codestudent.Location = new System.Drawing.Point(172, 54);
+            this.ip_codestudent.Name = "ip_codestudent";
+            this.ip_codestudent.Size = new System.Drawing.Size(20, 17);
+            this.ip_codestudent.TabIndex = 10;
+            this.ip_codestudent.Text = "...";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(66, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 17);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Exam results";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -74,42 +110,6 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Student Code";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 128);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 17);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Exam results";
-            // 
-            // ip_codestudent
-            // 
-            this.ip_codestudent.AutoSize = true;
-            this.ip_codestudent.Location = new System.Drawing.Point(172, 54);
-            this.ip_codestudent.Name = "ip_codestudent";
-            this.ip_codestudent.Size = new System.Drawing.Size(20, 17);
-            this.ip_codestudent.TabIndex = 10;
-            this.ip_codestudent.Text = "...";
-            // 
-            // ip_fullname
-            // 
-            this.ip_fullname.AutoSize = true;
-            this.ip_fullname.Location = new System.Drawing.Point(172, 91);
-            this.ip_fullname.Name = "ip_fullname";
-            this.ip_fullname.Size = new System.Drawing.Size(20, 17);
-            this.ip_fullname.TabIndex = 11;
-            this.ip_fullname.Text = "...";
-            // 
-            // ip_date
-            // 
-            this.ip_date.AutoSize = true;
-            this.ip_date.Location = new System.Drawing.Point(172, 128);
-            this.ip_date.Name = "ip_date";
-            this.ip_date.Size = new System.Drawing.Size(20, 17);
-            this.ip_date.TabIndex = 12;
-            this.ip_date.Text = "...";
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
@@ -117,7 +117,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 32);
             this.button1.TabIndex = 14;
-            this.button1.Text = "Back Home";
+            this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

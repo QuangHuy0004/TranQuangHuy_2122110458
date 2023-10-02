@@ -62,5 +62,10 @@ namespace TranQuangHuy_2122110458 {
         {
             ot = tb_SC.Text;    
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

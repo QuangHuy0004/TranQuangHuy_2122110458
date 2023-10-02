@@ -44,5 +44,11 @@ namespace TranQuangHuy_2122110458
             Form3 objfrom3 = new Form3();
             objfrom3.ShowDialog();
         }
+
+        private void form4_Click(object sender, EventArgs e)
+        {
+            Form4 objfrom4 = new Form4();
+            objfrom4.ShowDialog();
+        }
     }
 }

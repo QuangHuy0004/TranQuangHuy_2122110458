@@ -182,8 +182,24 @@ namespace TranQuangHuy_2122110458
 
         private void datastudent_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Lấy dòng được chọn
+            // Lấy dòng được chọn từ DataGridView
             DataGridViewRow selectedRow = datastudent.Rows[e.RowIndex];
+
+            // Kiểm tra xem dòng có dữ liệu không
+            if (selectedRow.Cells[0].Value == null || string.IsNullOrWhiteSpace(selectedRow.Cells[0].Value.ToString()))
+            {
+                // Nếu dòng không có dữ liệu, in ra thông báo yêu cầu nhập thông tin
+                MessageBox.Show("Vui lòng nhập thông tin.");
+            }
+            else
+            {
+                // Nếu dòng có dữ liệu, thực hiện các tác vụ khác ở đây
+                // Ví dụ: hiển thị thông tin dòng đã chọn
+                string rowData = selectedRow.Cells[0].Value.ToString();
+                MessageBox.Show("Dòng được chọn có thông tin: " + rowData);
+            }
+
+
 
             // Truy cập dữ liệu trên dòng và hiển thị hoặc sử dụng nó
             string studentCode = selectedRow.Cells[0].Value.ToString();

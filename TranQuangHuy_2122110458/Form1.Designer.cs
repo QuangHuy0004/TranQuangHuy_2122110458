@@ -36,6 +36,7 @@ namespace TranQuangHuy_2122110458
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_Close = new System.Windows.Forms.Button();
             this.ip_gender = new System.Windows.Forms.ComboBox();
             this.ip_address = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@ namespace TranQuangHuy_2122110458
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Close = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datastudent)).BeginInit();
@@ -126,6 +126,18 @@ namespace TranQuangHuy_2122110458
             this.panel2.Size = new System.Drawing.Size(741, 212);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btn_Close.Location = new System.Drawing.Point(612, 158);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(84, 34);
+            this.btn_Close.TabIndex = 61;
+            this.btn_Close.Text = "Close";
+            this.btn_Close.UseVisualStyleBackColor = true;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
             // ip_gender
             // 
@@ -434,18 +446,6 @@ namespace TranQuangHuy_2122110458
             this.Column7.HeaderText = "Address";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            // 
-            // btn_Close
-            // 
-            this.btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_Close.Location = new System.Drawing.Point(612, 158);
-            this.btn_Close.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(84, 34);
-            this.btn_Close.TabIndex = 61;
-            this.btn_Close.Text = "Close";
-            this.btn_Close.UseVisualStyleBackColor = true;
-            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
             // Form1
             // 
