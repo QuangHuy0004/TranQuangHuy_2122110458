@@ -17,11 +17,11 @@ namespace TranQuangHuy_2122110458
             InitializeComponent();
         }
 
-        private void F1_Click(object sender, EventArgs e)
-        {
-           Form1 objfrom1 = new Form1();
-            objfrom1.ShowDialog();
-        }
+        //private void F1_Click(object sender, EventArgs e)
+        //{
+        //   Form1 objfrom1 = new Form1();
+        //    objfrom1.ShowDialog();
+        //}
 
         private void F2_Click(object sender, EventArgs e)
         {
@@ -36,7 +36,12 @@ namespace TranQuangHuy_2122110458
 
         private void btn_Exits_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btn_Form3_Click(object sender, EventArgs e)
@@ -48,6 +53,12 @@ namespace TranQuangHuy_2122110458
         private void form4_Click(object sender, EventArgs e)
         {
             Form4 objfrom4 = new Form4();
+            objfrom4.ShowDialog();
+        }
+
+        private void F1_Click(object sender, EventArgs e)
+        {
+            Form1 objfrom4 = new Form1();
             objfrom4.ShowDialog();
         }
     }

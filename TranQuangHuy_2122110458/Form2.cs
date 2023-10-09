@@ -82,7 +82,12 @@ namespace TranQuangHuy_2122110458
 
         private void btn_Close_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Do you want to escape?", "Confirm exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

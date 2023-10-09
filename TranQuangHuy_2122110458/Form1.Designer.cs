@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace TranQuangHuy_2122110458
@@ -36,6 +37,8 @@ namespace TranQuangHuy_2122110458
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_Close = new System.Windows.Forms.Button();
             this.ip_gender = new System.Windows.Forms.ComboBox();
             this.ip_address = new System.Windows.Forms.ComboBox();
@@ -57,6 +60,8 @@ namespace TranQuangHuy_2122110458
             this.ip_time = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ip_name2 = new System.Windows.Forms.Label();
+            this.btFile = new System.Windows.Forms.Button();
+            this.ptImage = new System.Windows.Forms.PictureBox();
             this.datastudent = new System.Windows.Forms.DataGridView();
             this.code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,8 +71,10 @@ namespace TranQuangHuy_2122110458
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Image = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datastudent)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +84,7 @@ namespace TranQuangHuy_2122110458
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(743, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(791, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,15 +97,20 @@ namespace TranQuangHuy_2122110458
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.btFile);
+            this.flowLayoutPanel1.Controls.Add(this.ptImage);
             this.flowLayoutPanel1.Controls.Add(this.datastudent);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(751, 468);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(791, 480);
             this.flowLayoutPanel1.TabIndex = 5;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btn_Close);
             this.panel2.Controls.Add(this.ip_gender);
             this.panel2.Controls.Add(this.ip_address);
@@ -123,14 +135,38 @@ namespace TranQuangHuy_2122110458
             this.panel2.Location = new System.Drawing.Point(2, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(741, 212);
+            this.panel2.Size = new System.Drawing.Size(789, 212);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.button2.Location = new System.Drawing.Point(677, 147);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 34);
+            this.button2.TabIndex = 63;
+            this.button2.Text = "Exists";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.button1.Location = new System.Drawing.Point(677, 78);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 34);
+            this.button1.TabIndex = 62;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btn_Close
             // 
             this.btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_Close.Location = new System.Drawing.Point(612, 158);
+            this.btn_Close.Location = new System.Drawing.Point(576, 148);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(84, 34);
@@ -228,6 +264,7 @@ namespace TranQuangHuy_2122110458
             this.ip_class.Name = "ip_class";
             this.ip_class.Size = new System.Drawing.Size(152, 21);
             this.ip_class.TabIndex = 54;
+            this.ip_class.SelectedIndexChanged += new System.EventHandler(this.ip_class_SelectedIndexChanged);
             // 
             // ip_date
             // 
@@ -272,7 +309,7 @@ namespace TranQuangHuy_2122110458
             // btn_add
             // 
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_add.Location = new System.Drawing.Point(612, 20);
+            this.btn_add.Location = new System.Drawing.Point(677, 17);
             this.btn_add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(84, 33);
@@ -284,7 +321,7 @@ namespace TranQuangHuy_2122110458
             // btn_delete
             // 
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_delete.Location = new System.Drawing.Point(612, 113);
+            this.btn_delete.Location = new System.Drawing.Point(576, 78);
             this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(84, 34);
@@ -296,7 +333,7 @@ namespace TranQuangHuy_2122110458
             // btn_edit
             // 
             this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btn_edit.Location = new System.Drawing.Point(612, 65);
+            this.btn_edit.Location = new System.Drawing.Point(576, 16);
             this.btn_edit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(84, 34);
@@ -374,6 +411,26 @@ namespace TranQuangHuy_2122110458
             this.ip_name2.Text = "Name";
             this.ip_name2.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btFile
+            // 
+            this.btFile.Location = new System.Drawing.Point(3, 219);
+            this.btFile.Name = "btFile";
+            this.btFile.Size = new System.Drawing.Size(105, 26);
+            this.btFile.TabIndex = 54;
+            this.btFile.Text = "Choose Photo";
+            this.btFile.UseVisualStyleBackColor = true;
+            this.btFile.Click += new System.EventHandler(this.btFile_Click);
+            // 
+            // ptImage
+            // 
+            this.ptImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptImage.Location = new System.Drawing.Point(114, 219);
+            this.ptImage.Name = "ptImage";
+            this.ptImage.Size = new System.Drawing.Size(168, 146);
+            this.ptImage.TabIndex = 53;
+            this.ptImage.TabStop = false;
+            this.ptImage.Click += new System.EventHandler(this.ptImage_Click);
+            // 
             // datastudent
             // 
             this.datastudent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -388,16 +445,18 @@ namespace TranQuangHuy_2122110458
             this.Column3,
             this.Column6,
             this.Date,
-            this.Column7});
-            this.datastudent.Location = new System.Drawing.Point(2, 218);
+            this.Column7,
+            this.Image});
+            this.datastudent.Location = new System.Drawing.Point(2, 370);
             this.datastudent.Margin = new System.Windows.Forms.Padding(2);
             this.datastudent.Name = "datastudent";
             this.datastudent.RowHeadersWidth = 51;
             this.datastudent.RowTemplate.Height = 24;
-            this.datastudent.Size = new System.Drawing.Size(741, 250);
+            this.datastudent.Size = new System.Drawing.Size(789, 110);
             this.datastudent.TabIndex = 51;
             this.datastudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datastudent_CellClick);
             this.datastudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datastudent_CellContentClick_1);
+            this.datastudent.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.datastudent_CellContentClick);
             // 
             // code
             // 
@@ -447,11 +506,16 @@ namespace TranQuangHuy_2122110458
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
+            // Image
+            // 
+            this.Image.HeaderText = "Img";
+            this.Image.Name = "Image";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 469);
+            this.ClientSize = new System.Drawing.Size(791, 481);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -462,6 +526,7 @@ namespace TranQuangHuy_2122110458
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datastudent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -470,19 +535,33 @@ namespace TranQuangHuy_2122110458
 
         private void button_delete(object sender, EventArgs e)
         {
-            if (datastudent.SelectedRows.Count > 0)
+            if (datastudent.SelectedRows.Count == 0)
             {
-                if (MessageBox.Show("Do you want to delete this record? The data will not be recoverable.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    int rowIndex = datastudent.CurrentCell.RowIndex;
-                    datastudent.Rows.RemoveAt(rowIndex);
-                    //Delete();
-                }
+                MessageBox.Show("Please select a row to delete.");
+                return;
             }
-            else
+
+            if (string.IsNullOrEmpty(ip_code.Text) ||
+                string.IsNullOrEmpty(ip_name.Text) ||
+                string.IsNullOrEmpty(ip_gender.Text) ||
+                string.IsNullOrEmpty(ip_phone.Text) ||
+                string.IsNullOrEmpty(ip_date.Text) ||
+                string.IsNullOrEmpty(ip_faculy.Text) ||
+                string.IsNullOrEmpty(ip_class.Text) ||
+                string.IsNullOrEmpty(ip_address.Text))
             {
-                MessageBox.Show("Please select a record to delete.");
+                MessageBox.Show("Please fill in all input fields.");
+                return;
             }
+
+            // Lấy hàng được chọn đầu tiên (giả sử chỉ xóa một hàng mỗi lần)
+            DataGridViewRow selectedRow = datastudent.SelectedRows[0];
+
+            // Xóa hàng được chọn khỏi DataGridView
+            datastudent.Rows.Remove(selectedRow);
+
+            // Đặt hình ảnh của ptImage thành null
+            ptImage.Image = null;
         }
 
         #endregion
@@ -512,6 +591,9 @@ namespace TranQuangHuy_2122110458
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label ip_name2;
         private System.Windows.Forms.ComboBox ip_gender;
+        private Button btn_Close;
+        private Button btFile;
+        private PictureBox ptImage;
         private DataGridViewTextBoxColumn code;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column5;
@@ -520,7 +602,9 @@ namespace TranQuangHuy_2122110458
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Date;
         private DataGridViewTextBoxColumn Column7;
-        private Button btn_Close;
+        private DataGridViewTextBoxColumn Image;
+        private Button button2;
+        private Button button1;
     }
 }
 
